@@ -5,7 +5,7 @@ const saveElement = document.getElementById('resultSave');
 const payElement = document.getElementById('resultPay');
 const keepElement = document.getElementById('resultKeep');
 
-const costsCalculator = () => {
+const earningsCalculator = () => {
     let income = earningsElement.value;
     let tax = income * (20 / 100);
     taxElement.textContent = `Put £${tax} aside for income tax`;
@@ -17,4 +17,4 @@ const costsCalculator = () => {
     keepElement.textContent = `Keep £${keep} in your business account for day to day business costs`;
 };
 
-earningsButtonElement.addEventListener('click', costsCalculator);
+earningsButtonElement.addEventListener('click', earningsCalculator);
